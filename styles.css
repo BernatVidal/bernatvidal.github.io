@@ -1,6 +1,7 @@
 
 :root {
     --max-article-width: 280px;
+    --min-article-width: 280px;
 }
 
 body{
@@ -16,7 +17,7 @@ header.main-header{
     background-image: url("Resources/Images/dinoEngineYtBg3.png");
     background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -43,7 +44,7 @@ nav ul.page-links{
     display: flex;
     flex-wrap: wrap;
     font-size: 140%;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 0%;
     
     /* background-color: orange; */
@@ -98,13 +99,7 @@ section.presentation{
     max-width: var(--max-article-width);
 }
 
-.presentation figure figcaption{
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
 
-}
 .presentation figure img{
     /* border:1px  white; */
     border-radius: 50%;
@@ -149,7 +144,7 @@ section.games-and-apps{
     flex-direction: column;
     justify-content: space-between;
     margin: 10px;
-    max-width: var(--max-article-width);
+    min-width: var(--max-article-width);
     max-width: 400px;
     word-wrap: break-word;
 }
@@ -196,16 +191,26 @@ section.games-and-apps{
    align-items: center;
    display: flex;
    flex-direction: column;
+   max-width: 100%;
    /* width: 140px; */
-   /* background-color: tomato; */
+   background-color: tomato;
 
 }
+
+
 
 .games-and-apps article figure img{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 5px;
-    width: 150px;
+    
+    max-width: 100%;
+    heigh: auto;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
 }
+
 .games-and-apps article figure figcaption{
     font-weight: bold;
     margin-top: 10px;
