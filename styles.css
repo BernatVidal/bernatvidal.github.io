@@ -1,69 +1,65 @@
+
+:root {
+    --max-article-width: 280px;
+}
+
 body{
     background: rgb(53, 49, 49);
     /* background: rgb(53, 49, 49); */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0;
     padding:0;
 }
-header{
-    /* background-color: black; */
+header.main-header{
+    /* background-color: orange; */
     background-image: url("Resources/Images/dinoEngineYtBg3.png");
     background-position: 50% 100%;
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
     height:200px;
     text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
+    margin:0;
+    padding:0;
 }
+
 
 .main-title{
     /* color: rgb(94, 94, 94); */
     color: rgb(224, 224, 224);
-    display: inline-block;
-    margin-top: 50px;
-    overflow: hidden;
+    margin:0;
     text-align: center;
-    /* text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.212), 1px -1px 0 rgba(0, 0, 0, 0.219), -1px 1px 0 rgba(0, 0, 0, 0.205), 1px 1px 0 #000; */
-    word-wrap: break-word;
-    width: 100%;
-    /* background:  red; */
 }
 
-
-a, a:visited, a:hover, a:focus, a:active  { text-decoration: none; }
-
-ul{
-    list-style-type:none;
+.main-header nav{
+    display:flex;
 }
 
-
-.page-links{
-    bottom: 0;
-    display: inline-flex;
-    flex-direction: row;
+nav ul.page-links{
+    display: flex;
     flex-wrap: wrap;
     font-size: 140%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0%;
-    position: absolute;
-    /* background-color: red; */
+    
+    /* background-color: orange; */
 }
 .page-links li{
+    padding: 0px 20px 0px 0px;
+    margin: 5px;
     /* background-color:yellow; */
-    padding: 0px 20px 15px 20px;
 }
 
 .page-links li a{
     border-radius: 3px;
-    color:white; 
-    padding: 10px;
+    color:white;
+    /* padding: 10px; */
 }
-.page-links li a:hover{
-    background-color: rgba(0, 0, 0, 0.425);
-}
+
 .page-links li a:active{
     background-color: rgba(0, 0, 0, 0.6);
     color: gray;
@@ -74,52 +70,53 @@ ul{
 }
 
 
-section{
-    padding: 20px;
-    /* background: blueviolet; */
-    
-}
 
 /********** ABOUT PAGE ***************/
 
-.presentation{
+section.presentation{
+    align-self: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: center;
     /* background: blueviolet; */
-    
+
 }
 
-section.presentation article{
+.presentation article{
+    /* align-items: center; */
+    /* align-content: center; */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto;
-    padding: 30px ;
-    align-content: center;
-
-    /* background: red; */
+    padding: 20px ;
 
 }
+
+.presentation article figure, .presentation article div{
+    max-width: var(--max-article-width);
+}
+
 .presentation figure figcaption{
     font-weight: bold;
+    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
-    
+
 }
 .presentation figure img{
     /* border:1px  white; */
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.589) 10px 5px 10px;
     width: 200px;
-    
+
 }
 
 .presentation h2{
-    font-size: 160%;
-    /* color: rgb(16, 16, 16); */
     color: gainsboro;
+    /* color: rgb(16, 16, 16); */
+    font-size: 160%;
 }
 
 .presentation h3{
@@ -133,75 +130,81 @@ section.presentation article{
 
 /***************** GAMES AND APPS PAGE *******************/
 
-.games-and-apps{
+section.games-and-apps{
     align-self: center;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* justify-content: space-around; */
 }
 
 .games-and-apps article{
     align-items: center;
-    border-style: solid;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    max-width: 800px;
     background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 10px;
+    /* border-style: solid; */
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 10px;
+    max-width: var(--max-article-width);
+    max-width: 400px;
     word-wrap: break-word;
 }
 
-/* Text */
+        /* Text */
+
+/* .games-and-apps  h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+
+} */
 
 .games-and-apps div{
-    margin-left: 20px;
     font-weight: lighter;
+    margin-left: 12px;
+    margin-right: 12px;
+
+    /* background-color: tomato; */
 }
 
-.games-and-apps h1, h2, h3, h4, h5, h6{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.games-and-apps h3{
+    text-align: center;
 }
 
 .games-and-apps h4{
-    color: gray
+    color: rgb(165, 165, 165)
 }
 
 .games-and-apps h4,h6{
     font-style: italic;
 }
 
-.games-and-apps a, a:visited, a:hover, a:focus, a:active{
-    color: rgb(160, 160, 160)
+.games-and-apps h5{
+    line-height: 150%;
 }
 
-.games-and-apps  h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.425);
+.games-and-apps h6{
+    font-size: 78%;
 }
 
+        /* Images */
 
-
-/* Image */
 .games-and-apps article figure{
    /* justify-content: baseline; */
+   align-items: center;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   width: 140px;
+   /* width: 140px; */
    /* background-color: tomato; */
-   
+
 }
 
-
 .games-and-apps article figure img{
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 5px;
-    width: 120px;
+    width: 150px;
 }
 .games-and-apps article figure figcaption{
     font-weight: bold;
@@ -210,18 +213,67 @@ section.presentation article{
 }
 
 
+/* ************* MENTIONS *********** */
 
 
-h1{
-    /* color: rgb(45, 113, 168); */
-    /* background: black; */
+section.mentions{
+
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* justify-content: space-around; */
+
+}
+
+.mentions article{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 10px;
+    /* border-style: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    margin: 10px;
+    max-width: var(--max-article-width);
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.mentions a:hover {
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 3px;
+}
+
+.mentions article div.title{
+    text-align: center;
+    width: var(--max-mention-width);
+    /* background-color: red; */
+}
+
+/* .mentions article div.content{
+
+} */
+
+.mentions article div.content img , .mentions article div.content iframe{
+    max-width: var(--max-article-width);
 }
 
 
-h2{
-    /* color: rgba(146, 21, 21, 0.6); */
+/* ************* GLOBAL *********** */
 
+a, a:visited, a:hover, a:focus, a:active  {
+    text-decoration: none;
+    color: rgb(197, 196, 196);
 }
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 3px;
+}
+
 button{
     background: gray;
     border: none;
@@ -231,7 +283,24 @@ button{
 footer{
     background: black;
     color: rgb(105, 98, 98);
-    text-align: center;
     padding:10px;
-    
+    text-align: center;
+
+}
+
+h1{
+    /* color: rgb(45, 113, 168); */
+    /* background: black; */
+}
+
+h2{
+    /* color: rgba(146, 21, 21, 0.6); */
+}
+
+section{
+    /* padding: 20px; */
+}
+
+ul{
+    list-style-type:none;
 }
