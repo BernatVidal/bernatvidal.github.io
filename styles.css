@@ -1,7 +1,7 @@
 
 :root {
-    --max-article-width: 280px;
     --min-article-width: 280px;
+    --max-article-width: 550px;
 }
 
 body{
@@ -79,13 +79,12 @@ section.presentation{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top:20px;
     /* background: blueviolet; */
 
 }
 
 .presentation article{
-    /* align-items: center; */
-    /* align-content: center; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,7 +95,8 @@ section.presentation{
 }
 
 .presentation article figure, .presentation article div{
-    max-width: var(--max-article-width);
+    /* width: var(--min-article-width); */
+    /* background-color: tomato; */
 }
 
 
@@ -129,9 +129,10 @@ section.games-and-apps{
     align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    margin-top: 20px;
     /* justify-content: space-around; */
 }
 
@@ -139,13 +140,11 @@ section.games-and-apps{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.075);
     border-radius: 10px;
-    /* border-style: solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 10px;
-    min-width: var(--max-article-width);
-    max-width: 400px;
+    max-width: var(--max-article-width);
     word-wrap: break-word;
 }
 
@@ -157,14 +156,13 @@ section.games-and-apps{
 
 .games-and-apps div{
     font-weight: lighter;
-    margin-left: 12px;
-    margin-right: 12px;
-
-    /* background-color: tomato; */
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 .games-and-apps h3{
+    /* font-size: 6vw; */
     text-align: center;
 }
 
@@ -186,34 +184,28 @@ section.games-and-apps{
 
         /* Images */
 
-.games-and-apps article figure{
+.games-and-apps article figure, .games-and-apps article figure a{
    /* justify-content: baseline; */
    align-items: center;
    display: flex;
    flex-direction: column;
-   max-width: 100%;
+   width: 100%;
    /* width: 140px; */
-   background-color: tomato;
+   /* background-color: tomato; */
 
 }
 
 
 
-.games-and-apps article figure img{
+.games-and-apps article figure img, .games-and-apps article figure a img{
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 5px;
-    
-    max-width: 100%;
-    heigh: auto;
-    display: block;
-    /* margin-left: auto;
-    margin-right: auto;
-    display: block; */
+    box-shadow: rgba(0, 0, 0, 0.589) 7px 7px 7px;
+    width: 70%;
 }
 
 .games-and-apps article figure figcaption{
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -225,24 +217,23 @@ section.mentions{
 
     align-self: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* justify-content: space-around; */
-
+    justify-content: center;
+    height: auto;
+    margin-top: 20px;
 }
 
 .mentions article{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.075);
     border-radius: 10px;
-    /* border-style: solid; */
     display: flex;
+    flex: auto;
     flex-direction: column;
-    justify-content: space-around;
-    /* justify-content: space-between; */
     margin: 10px;
     max-width: var(--max-article-width);
+    min-height: 400px;
     padding: 10px;
     word-wrap: break-word;
 }
@@ -254,16 +245,19 @@ section.mentions{
 
 .mentions article div.title{
     text-align: center;
-    width: var(--max-mention-width);
-    /* background-color: red; */
 }
 
-/* .mentions article div.content{
+.mentions article div.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
 
-} */
-
-.mentions article div.content img , .mentions article div.content iframe{
-    max-width: var(--max-article-width);
+.mentions article div.content a img , .mentions article div.content iframe{
+    width: 100%;
+    height: 100%;
 }
 
 
