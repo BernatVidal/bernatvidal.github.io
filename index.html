@@ -19,15 +19,44 @@
                     <a class = "selected-link" href="index.html">About</a>
                 </li>
                 <li>
-                    <a href="pages/games.html">Games / Apps</a>
+                    <a href="Pages/games.html">Games / Apps</a>
                 </li>
                 <li>
-                    <a href="pages/mentions.html">Mentions</a>
+                    <a href="Pages/mentions.html">Mentions</a>
                 </li>
             </ul>
         </nav>
 
     </header>
+
+    <hr>
+<!-- 
+    <section class="salute">
+        <div class = "welcome">
+            <u> ¡Hola! </u>
+        </div>
+
+        <div class ="welcome-content">
+            Soy desarrollador de Apps y Videojuegos y programador Junior a <i>Mid-range</i> con conocimiento y experiencia en:<br>
+            <article class = "welcome-skills">
+                <ul class="LColumn">
+                    <li>Desarrollo / Diseño / Producción de Aplicaciones y Videojuegos</li>
+                    <li>Programación</li>  
+                    <li><i>IT</i></li> 
+                    
+                </ul>
+                <ul class="RColumn">
+                    <li>Modelación 3D</li>
+                    <li>Edición de Imagen y Sonido</li>
+                    <li><i>Game Studies</i></li> 
+                    <li>Ciencias Naturales </li>
+                </ul>
+            </article>
+            <a href="Pages/games.html"> Aquí</a>  podrás encontrar algunos de los proyectos profesionales en los que he participado
+        </div>
+    </section>
+
+    <hr> -->
 
     <section class = "presentation">
         <article>
@@ -46,7 +75,8 @@
         <article>
             <div>
                 <h2>Dino-Engine</h2>    
-                <h4>Marca personal para el desarrollo de Apps y Videojuegos independientes</h4>
+                <h4>Marca personal para el desarrollo de Apps<br>
+                    y Videojuegos independientes</h4>
             </div>
             <figure>
                 <img src="Resources/Images/dinoEngine.jpg" alt="Logo Dino-Engine">
@@ -54,9 +84,61 @@
         </article>
     </section>
 
+
+
+
+
+
+    <!------ FOOTER ------>
+
     <footer>
-        Powered by: <b> Dino-Engine </b>
+        <div class="powered-by">
+            <div>Powered by: </div> 
+            <div><b> Dino-Engine </b></div> 
+        </div>
+
+        <div class ="contact-logos">
+            <a> 
+                <img src="Resources/Images/RRSS/mailLogo.png" alt="email = bernatvidalgrau@gmail.com"onclick="copyText('bernatvidalgrau@gmail.com')"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/vidalbernat/" target="_blank">
+                <img src="Resources/Images/RRSS/linkedinLogo.png" alt="link a linkedin"/>
+            </a>
+            <a href="https://github.com/BernatVidal" target="_blank">
+                <img src="Resources/Images/RRSS/githubLogo.png" alt="link a GitHub"/>
+            </a>
+            <a href="https://twitter.com/BTheDinosaur" target="_blank">
+                <img src="Resources/Images/RRSS/twitterLogo.png" alt="link a Twitter"/>
+            </a>
+        </div>
+
+
     </footer>
 
 </body>
+
+
+<!------ SCRIPTS ----->
+
+<script>
+function copyText(str) {
+    // Create new element
+    var txt = document.createElement('textarea');
+    // Set value (string to be copied)
+    txt.value = str;
+    // Set non-editable to avoid focus and move outside of view
+    txt.setAttribute('readonly', '');
+    txt.style = {position: 'absolute', left: '-9999px'};
+    document.body.appendChild(txt);
+    // Select text inside element
+    txt.select();
+    // Copy text to clipboard and alert user
+    document.execCommand('copy');
+    alert("Mail copiado en el portapapeles: " + txt.value);
+    // Remove temporary element
+    document.body.removeChild(txt);
+}
+</script>
+
+
 </html>

@@ -1,7 +1,11 @@
 
 :root {
-    --min-article-width: 280px;
+    /* --header-height: 10vh; */
+    --footer-height: 4vh;
+    
     --max-article-width: 550px;
+    --min-article-width: 280px;
+
 }
 
 body{
@@ -11,6 +15,7 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0;
     padding:0;
+
 }
 header.main-header{
     /* background-color: orange; */
@@ -23,6 +28,7 @@ header.main-header{
     justify-content: flex-end;
     font-weight: bold;
     height:200px;
+    /* height:var(--header-height); */
     text-transform: uppercase;
     margin:0;
     padding:0;
@@ -45,8 +51,8 @@ nav ul.page-links{
     flex-wrap: wrap;
     font-size: 140%;
     justify-content: center;
+    list-style-type:none;
     margin-bottom: 0%;
-    
     /* background-color: orange; */
 }
 .page-links li{
@@ -74,14 +80,57 @@ nav ul.page-links{
 
 /********** ABOUT PAGE ***************/
 
-section.presentation{
-    align-self: center;
+
+/******** WELCOME *******/
+
+section.salute{
+    
+    align-items: center;
+    flex-direction:column;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 120%;
+    /* font-weight: bold; */
+    /* justify-content: center; */
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    /* width:75%; */
+
+    /* background-color: turquoise; */
+}
+
+.salute div.welcome{
+    font-size: 200%;
+    margin-top: 3vh;
+    margin-bottom: 20px;
+}
+
+.salute div .welcome-content{
+
+}
+
+.welcome-content article.welcome-skills{
+
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-top:20px;
-    /* background: blueviolet; */
+    justify-content: space-between;
+    /* background-color:tomato; */
+}
 
+.welcome-skills ul{
+    text-align: left;
+    max-width: 33%;
+    /* background-color: turquoise; */
+}
+
+/********* PRESENTATION *********/
+
+section.presentation{
+
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .presentation article{
@@ -126,12 +175,12 @@ section.presentation{
 /***************** GAMES AND APPS PAGE *******************/
 
 section.games-and-apps{
-    align-self: center;
-    display: flex;
+    /* align-self: center;
+    display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 20px;
     /* justify-content: space-around; */
 }
@@ -215,13 +264,13 @@ section.games-and-apps{
 
 section.mentions{
 
-    align-self: center;
-    display: flex;
+    /* align-self: center;
+    display: flex; */
     flex-flow: row wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    justify-content: center;
+    /* justify-content: center; */
     height: auto;
-    margin-top: 20px;
+
 }
 
 .mentions article{
@@ -280,11 +329,53 @@ button{
 }
 
 footer{
-    background: black;
-    color: rgb(105, 98, 98);
-    padding:10px;
+    background: rgba(0, 0, 0, 0.685);
+    bottom: 0;
+    color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: row;
+    height: var(--footer-height);
+    justify-content: space-around;
+    left: 0;
+    padding-top:10px;
+    padding-bottom:10px;
+    position: fixed;
+    right: 0;
     text-align: center;
+    width: 100vw;
 }
+
+footer div.powered-by{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: 2vw;
+}
+
+.powered-by div{
+    align-self: center;
+    margin-right: 1vh;
+}
+
+ footer div.contact-logos{
+   min-width: 25%;
+   /* background-color: turquoise; */
+} 
+
+.contact-logos a{
+    height: 100%;
+    margin-right:  2vw;
+    background-color: transparent;
+}
+    
+
+.contact-logos a img{
+    height: 100%;
+    width: auto;
+}
+
 
 h1{
     /* color: rgb(45, 113, 168); */
@@ -295,10 +386,24 @@ h2{
     /* color: rgba(146, 21, 21, 0.6); */
 }
 
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: inset;
+  border-width: 1px;
+} 
+
 section{
-    /* padding: 20px; */
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 8vh;
 }
 
 ul{
-    list-style-type:none;
+  
 }
