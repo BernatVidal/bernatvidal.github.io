@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernat Vidal - Avatar</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="shortcut icon" href="../favicon.png">
+
+</head>
+
+
+<body>
+
+    <header class="main-header">
+        <h1 class="main-title">Avatar</h1>
+        <nav>
+            <ul class = "page-links">
+                <li>
+                    <a href="../../index.html">About</a>
+                </li>
+                <li>
+                    <a class = "selected-link" href="../games.html">Games / Apps</a>
+                </li>
+                <li>
+                    <a href="../mentions.html">Mentions</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="game-description">
+        <div>
+            <h1><u>Avatar - Generación convive</u></h1>
+        </div>
+
+        <hr>
+
+        <div> <br>
+           Avatar es una web-app integrada dentro de la plataforma de e-learning del programa de convivencia escolar <a href="https://generacionconvive.com/"> Generación Convive</a>  creada
+           <a href="https://arsgames.net/alerta-bullying-plataforma-de-educacion-mixta-gamificada-de-la-asociacion-ginso/"> por ARSGames</a><br><br>
+           La app permite que el alumnado pueda crear su propio avatar en la plataforma. 
+           Además, posteriormente pueden modificarlo en cualquier momento accediendo desde el área personal y descargarlo en formato JPEG para usarlo, si quieren, como imagen de perfil de la plataforma.
+           Este avatar es usado en distintos apartados y momentos del curso.
+        <br><br>
+        </div>
+
+        <div>
+            Mi función durante el desarrollo fue la de programador principal de la aplicación, así como la de coordinación con el artista y con el programador de la plataforma en si.
+            <br>
+            La aplicación se comunica con la base de datos de la plataforma (mediante llamadas AJAX de PHP usando SQL y JQuery) para poder guardar y registrar los cambios 
+            de la apariencia de cada alumno y que esta información pueda ser usada por la plataforma.
+            <br>
+            El desarrollo empezó en Unity-WebGL para poder usarlo en la plataforma web, pero durante el desarrollo descubrimos que daba problemas al lanzarse desde dispositivos móvil ( Android e IOS),
+            por lo que tuvimos que cambiar de motor a Construct (Js frontend) ya que su output de WebGL nos aseguraba una integración completa y sin fallos desde cualquier dispositivo.
+            <br><br>
+        </div>
+
+        <div>
+            Ésta fue mi primera colaboración con ARSGames y el inicio de mi relación profesional con ellos.
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="games-and-apps">
+
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/ustomizacion_de_avatar.png" alt="Avatar Screenshot 1">
+               
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar2.png" alt="Avatar Screenshot 2">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar3.png" alt="Avatar Screenshot 3">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar4.png" alt="Avatar Screenshot 4">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar5.png" alt="Avatar Screenshot 5">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar6.png" alt="Avatar Screenshot 6">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar7.png" alt="Avatar Screenshot 7">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar8.png" alt="Avatar Screenshot 8">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="../../Resources/Images/Games/Avatar/Customizacion_de_avatar9.png" alt="Avatar Screenshot 9">
+            </figure>
+        </article>
+
+
+    </section>
+
+
+
+
+    <!------ FOOTER ------>
+
+    <footer>
+        <div class="powered-by">
+            <div>Powered by:</div>
+            <div><b>Dino-Engine </b></div>
+        </div>
+
+        <div class ="contact-logos">
+            <a>
+                <img src="../../Resources/Images/RRSS/mailLogo.png" alt="email = bernatvidalgrau@gmail.com"onclick="copyText('bernatvidalgrau@gmail.com')"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/vidalbernat/" target="_blank">
+                <img src="../../Resources/Images/RRSS/linkedinLogo.png" alt="link a linkedin"/>
+            </a>
+            <a href="https://github.com/BernatVidal" target="_blank">
+                <img src="../../Resources/Images/RRSS/githubLogo.png" alt="link a GitHub"/>
+            </a>
+            <a href="https://twitter.com/BTheDinosaur" target="_blank">
+                <img src="../../Resources/Images/RRSS/twitterLogo.png" alt="link a Twitter"/>
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+
+<!------ SCRIPTS ----->
+
+<script>
+function copyText(str) {
+    // Create new element
+    var txt = document.createElement('textarea');
+    // Set value (string to be copied)
+    txt.value = str;
+    // Set non-editable to avoid focus and move outside of view
+    txt.setAttribute('readonly', '');
+    txt.style = {position: 'absolute', left: '-9999px'};
+    document.body.appendChild(txt);
+    // Select text inside element
+    txt.select();
+    // Copy text to clipboard and alert user
+    document.execCommand('copy');
+    alert("Mail copiado en el portapapeles: " + txt.value);
+    // Remove temporary element
+    document.body.removeChild(txt);
+}
+</script>
+
+
+</html>
