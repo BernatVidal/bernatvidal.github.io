@@ -2,7 +2,7 @@
 :root {
     /* --header-height: 10vh; */
     --footer-height: 4vh;
-    
+
     --max-article-width: 550px;
     --min-article-width: 280px;
 
@@ -84,12 +84,12 @@ nav ul.page-links{
 /******** WELCOME *******/
 
 section.salute{
-    
+
     align-items: center;
     flex-direction:column;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 120%;
-    /* font-weight: bold; */
+    font-weight: bolder;
     /* justify-content: center; */
     line-height: 30px;
     margin-top: 15px;
@@ -115,13 +115,14 @@ section.salute{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* background-color:tomato; */
 }
 
 .welcome-skills ul{
-    text-align: left;
+    margin-right: 10px;
     max-width: 33%;
+    text-align: left;
     /* background-color: turquoise; */
 }
 
@@ -172,17 +173,80 @@ section.presentation{
     color: rgb(153, 153, 153);
 }
 
+
+/************ RESUME ***********/
+
+section.resume{
+    flex-direction: column;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    /* background-color: tomato; */
+}
+
+.resume div.resume-title{
+    align-self: center;
+    font-size: 220%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.resume div.resume-pdf{
+    align-self: center;
+
+}
+
+
+.resume div.resume-pdf figure a{
+    display: flex;
+    flex-direction: column;
+}
+
+.resume div.resume-pdf figure a img{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+.resume article.resume-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resume-content div .title{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 150%;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.resume-content div .content{
+    /* font-size: 150%; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.resume-content div ul div{
+    font-size: 120%;;
+    margin-bottom: 10px;
+}
+.resume-content div ul li{
+    margin-bottom: 5px;
+}
+
+
+
 /***************** GAMES AND APPS PAGE *******************/
 
 section.games-and-apps{
-    /* align-self: center;
-    display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* justify-content: center; */
     margin-top: 20px;
-    /* justify-content: space-around; */
 }
 
 .games-and-apps article{
@@ -259,16 +323,25 @@ section.games-and-apps{
 }
 
 
+/***** GAME PAGE *****/
+
+section.game-description{
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: justify;
+    /* background-color: hotpink; */
+}
+
+
+
 /* ************* MENTIONS *********** */
 
 
 section.mentions{
-
-    /* align-self: center;
-    display: flex; */
     flex-flow: row wrap;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* justify-content: center; */
     height: auto;
 
 }
@@ -308,6 +381,7 @@ section.mentions{
     width: 100%;
     height: 100%;
 }
+
 
 
 /* ************* GLOBAL *********** */
@@ -362,14 +436,14 @@ footer div.powered-by{
  footer div.contact-logos{
    min-width: 25%;
    /* background-color: turquoise; */
-} 
+}
 
 .contact-logos a{
     height: 100%;
     margin-right:  2vw;
     background-color: transparent;
 }
-    
+
 
 .contact-logos a img{
     height: 100%;
@@ -386,7 +460,7 @@ h2{
     /* color: rgba(146, 21, 21, 0.6); */
 }
 
-hr { 
+hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -394,7 +468,7 @@ hr {
   margin-right: 5%;
   border-style: inset;
   border-width: 1px;
-} 
+}
 
 section{
     align-self: center;
@@ -405,5 +479,5 @@ section{
 }
 
 ul{
-  
+
 }
