@@ -38,8 +38,8 @@
         <hr>
 
         <div> <br>
-           Avatar es una web-app integrada dentro de la plataforma de e-learning del programa de convivencia escolar <a href="https://generacionconvive.com/"> Generación Convive</a>  creada
-           <a href="https://arsgames.net/alerta-bullying-plataforma-de-educacion-mixta-gamificada-de-la-asociacion-ginso/"> por ARSGames</a><br><br>
+           Avatar es una web-app integrada dentro de la plataforma de e-learning del programa de convivencia escolar <a href="https://generacionconvive.com/"  target="_blank"> Generación Convive</a>  creada
+           <a href="https://arsgames.net/alerta-bullying-plataforma-de-educacion-mixta-gamificada-de-la-asociacion-ginso/"  target="_blank"> por ARSGames</a><br><br>
            La app permite que el alumnado pueda crear su propio avatar en la plataforma. 
            Además, posteriormente pueden modificarlo en cualquier momento accediendo desde el área personal y descargarlo en formato JPEG para usarlo, si quieren, como imagen de perfil de la plataforma.
            Este avatar es usado en distintos apartados y momentos del curso.
@@ -47,7 +47,7 @@
         </div>
 
         <div>
-            Mi función durante el desarrollo fue la de programador principal de la aplicación, así como la de coordinación con el artista y con el programador de la plataforma en si.
+            Mi función durante el desarrollo fue la de programador principal de la aplicación, así como la de coordinación con el artista (<a href="https://www.pinterest.es/MarcSardaM/"  target="_blank">Marc Sardà</a> ) y con el programador de la plataforma (<a href="https://www.linkedin.com/in/alfa-sanchez/"  target="_blank">Alfonso Sánchez </a> )en si.
             <br>
             La aplicación se comunica con la base de datos de la plataforma (mediante llamadas AJAX de PHP usando SQL y JQuery) para poder guardar y registrar los cambios 
             de la apariencia de cada alumno y que esta información pueda ser usada por la plataforma.
@@ -152,32 +152,12 @@
             </a>
         </div>
 
+        <script  src="../../Resources/Scripts/scripts.js"></script>
+
+
     </footer>
 
 </body>
-
-
-<!------ SCRIPTS ----->
-
-<script>
-function copyText(str) {
-    // Create new element
-    var txt = document.createElement('textarea');
-    // Set value (string to be copied)
-    txt.value = str;
-    // Set non-editable to avoid focus and move outside of view
-    txt.setAttribute('readonly', '');
-    txt.style = {position: 'absolute', left: '-9999px'};
-    document.body.appendChild(txt);
-    // Select text inside element
-    txt.select();
-    // Copy text to clipboard and alert user
-    document.execCommand('copy');
-    alert("Mail copiado en el portapapeles: " + txt.value);
-    // Remove temporary element
-    document.body.removeChild(txt);
-}
-</script>
 
 
 </html>
