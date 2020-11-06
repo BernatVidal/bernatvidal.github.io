@@ -1,0 +1,55 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created using www.xml-sitemaps.com 
+-->
+    <url>
+        <loc>https://bernatvidal.github.io/</loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://bernatvidal.github.io/index.html</loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://bernatvidal.github.io/Pages/es/games.html</loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://bernatvidal.github.io/Pages/es/mentions.html
+        </loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://bernatvidal.github.io/Pages/es/Games/homozapping.html
+        </loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+            https://bernatvidal.github.io/Pages/es/Games/esuperheroes.html
+        </loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+            https://bernatvidal.github.io/Pages/es/Games/avatar.html
+        </loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+            https://bernatvidal.github.io/Pages/es/Games/pinpampoom.html
+        </loc>
+        <lastmod>2020-11-06T13:08:45+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+</urlset>
